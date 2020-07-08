@@ -15,6 +15,16 @@
         android:background="#fff"
         />
 
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#8b0000"
+        android:layout_marginTop="60dp"
+        />
+
     <android.support.design.widget.FloatingActionButton
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -25,6 +35,23 @@
         android:layout_marginVertical="190dp"
         android:pointerIcon="hand"
         >
-    </android.support.design.widget.FloatingActionButton>>
+    </android.support.design.widget.FloatingActionButton>
+
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use that button above to call Emergency"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        
+        android:layout_alignParentBottom="true"       />
+
+</RelativeLayout>
 
 </FrameLayout>
