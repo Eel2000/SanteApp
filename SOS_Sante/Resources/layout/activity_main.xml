@@ -34,7 +34,13 @@
         android:clickable="true"
         android:layout_marginVertical="190dp"
         android:pointerIcon="hand"
+        android:background="#8b0000"
         >
+       <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@android:drawable/ic_menu_call"
+            />
     </android.support.design.widget.FloatingActionButton>
 
    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
