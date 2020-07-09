@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -25,22 +25,24 @@
         android:layout_marginTop="60dp"
         />
 
+
     <android.support.design.widget.FloatingActionButton
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
         android:elevation="10dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center|center"
         android:clickable="true"
-        android:layout_marginVertical="190dp"
         android:pointerIcon="hand"
         android:background="#8b0000"
+        android:id="@+id/FabCall"
+        android:src="@android:drawable/ic_menu_call"
+        
         >
-       <ImageView
+       <!-- <ImageView
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@android:drawable/ic_menu_call"
-            />
+            tools:src="@android:drawable/ic_menu_add"
+            />-->
     </android.support.design.widget.FloatingActionButton>
 
    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -54,9 +56,9 @@
         android:layout_height="wrap_content"
         android:text="Use that button above to call Emergency"
         android:textAlignment="center"
-        android:textSize="15dp"
-        
-        android:layout_alignParentBottom="true"       />
+        android:textSize="15dp"       
+        android:layout_alignParentBottom="true"
+            />
 
 </RelativeLayout>
 

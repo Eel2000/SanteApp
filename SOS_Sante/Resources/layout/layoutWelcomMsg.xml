@@ -3,15 +3,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:minHeight="50dp">
+    android:minHeight="50dp"
+    android:background="#fff">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageViewCall"
+        android:contentDescription="@string/abc_capital_on"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Emergency"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textColor="#8b0000"
-        android:layout_alignParentBottom="true"       />
+        android:layout_height="match_parent"
+        android:src="@mipmap/ambulance"/>
 
 </RelativeLayout>
