@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8b0000">
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/abc_ic_ab_back_material"
+        android:background="#8b0000"
+        android:contentDescription="@string/abc_font_family_button_material"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/abc_action_menu_overflow_description"
+        android:fontFamily="sans-serif-condensed"
+        android:textFontWeight="4sp"
+        android:textSize="@dimen/abc_text_size_headline_material"/>
+
+    <android.support.v7.view.menu.ListMenuItemView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contextClickable="true"
+        android:id="@+id/listMenuItemViewOptions"
+        android:divider="@drawable/abc_btn_check_to_on_mtrl_015"
+        android:animateLayoutChanges="?android:attr/windowCloseOnTouchOutside"/>
+
+</LinearLayout>
