@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8b0000">
+   >
 
-    <ImageButton
+   <!-- <ImageButton
         android:id="@+id/imageButtonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/abc_ic_ab_back_material"
         android:background="#8b0000"
-        android:contentDescription="@string/abc_font_family_button_material"/>
+        android:contentDescription="@string/abc_font_family_button_material"/>-->
+
+
+
+    <ImageButton
+        android:src="@drawable/abc_ic_ab_back_material"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:id="@+id/imageButton1" />
+
+
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -22,12 +34,27 @@
         android:textFontWeight="4sp"
         android:textSize="@dimen/abc_text_size_headline_material"/>
 
-    <android.support.v7.view.menu.ListMenuItemView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contextClickable="true"
-        android:id="@+id/listMenuItemViewOptions"
-        android:divider="@drawable/abc_btn_check_to_on_mtrl_015"
-        android:animateLayoutChanges="?android:attr/windowCloseOnTouchOutside"/>
+   <Button
+        android:id="@+id/buttonSignIn"
+       android:layout_width="200dp"
+       android:layout_height="60dp"
+       android:layout_gravity="center|center"
+        android:text="Sign In"
+        android:background="#0ba0e3"
+        android:clickable="true"
+       />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:text="Sign Up"
+        android:background="@drawable/Mybtn"
+        android:clickable="true"
+        />
+
+    
+
+</FrameLayout>

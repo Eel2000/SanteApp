@@ -18,4 +18,6 @@
 
 </style>
 
+  <style name="CustomTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
 </resources>

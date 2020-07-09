@@ -10,7 +10,7 @@ namespace SOS_Sante
     [Activity(Theme = "@style/AppTheme", MainLauncher = false)]
     public class MainActivity : AppCompatActivity
     {
-       
+        Android.Support.V7.Widget.AppCompatImageButton button;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -20,7 +20,7 @@ namespace SOS_Sante
             SetContentView(Resource.Layout.activity_main);
 
             var fab = FindViewById<FloatingActionButton>(Resource.Id.FabCall);
-            var optionsBtn = FindViewById<Button>(Resource.Id.BtnOption);
+            var optionsBtn = FindViewById<ImageButton>(Resource.Id.imageButton);
 
             fab.Click += Fab_Click;
             optionsBtn.Click += OptionsBtn_Click;
@@ -34,6 +34,11 @@ namespace SOS_Sante
         private void Fab_Click(object sender, System.EventArgs e)
         {
             Toast.MakeText(this, "You.ve call Nearly Emergency Ambulance", ToastLength.Long).Show();
+        }
+
+        public override void OnBackPressed()
+        {
+            base.OnBackPressed();
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
